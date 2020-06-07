@@ -1,1 +1,5 @@
 # dehazing_algorithm_retinex
+Haze will cause serious damage to the outdoor scene image, which is manifested by uneven lighting, low color saturation, poor detail and contrast, which will cause the degradation of image quality, aecting further human eye discrimination and machine recognition. This report proposes a dehazing enhancement method that combines wavelet analysis and Retinex theory. Firstly, image is decomposed by wavelet to approximate and detail coeffecients. Because the haze is typically distributed in the approximate coeffecients, then do Retinex algorithm on approximate coeffecients to dehazing, and for detail coeffecients, do threshold denoising to enhance image details and contrast. The wavelet is reconstructed and converted to RGB space, which further stretches the homomorphic range and improves the visibility of the human eye. In addition, SSIM and PSNR are used for image quality evaluation. Experiments have proved that this method is eective for removing haze.
+
+run retinex.m
+run programming.3
